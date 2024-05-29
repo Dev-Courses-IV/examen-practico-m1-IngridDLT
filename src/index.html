@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <title>Students List Examen DOM</title>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">Students list</h1>
-    <!-- <ul id="studentsList" class="grid grid-cols-4 gap-4 m-10"></ul> -->
+<body class="mx-10 my-20 flex flex-col items-center bg-amber-50">
+    <h1 class="text-indigo-800 text-6xl font-bold mb-10">Students List</h1>
+    <ul id="studentsList" class="grid grid-cols-4 gap-4 mb-10 w-full max-w-screen-lg"></ul>
     <button
-      class="bg-lime-800 hover:bg-lime-700 px-4 py-1 rounded-lg text-white"
+      class="bg-indigo-800 hover:bg-indigo-400 px-4 py-2 rounded-lg text-white"
       id="printButton"
     >
       Print students
