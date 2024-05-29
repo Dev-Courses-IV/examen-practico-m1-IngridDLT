@@ -13,6 +13,8 @@ const students = [
   { name: "Javi", age: 33, email: "javi@email.com" },
   { name: "Lorena", age: 34, email: "lorena@email.com" },
   { name: "Constanza", age: 28, email: "constanza@email.com" },
+  { name: "Ingrid", age: 45, email: "ingrid@email.com" },
+  { name: "Raquel", age: 28, email: "raquel@email.com" },
 ];
 
 document.getElementById("printButton").addEventListener("click", () => {
@@ -21,7 +23,7 @@ document.getElementById("printButton").addEventListener("click", () => {
 
   students.forEach(student => {
     const listItem = document.createElement("li");
-    listItem.className = "bg-blue-100 p-4 rounded-lg shadow";
+    listItem.classList = "bg-blue-100 p-4 rounded-lg shadow";
     listItem.innerHTML = `<strong>${student.name}</strong>, ${student.age} years old`;
     studentsList.appendChild(listItem);
   });
